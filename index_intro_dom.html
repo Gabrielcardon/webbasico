@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exemplo (DOM)</title>    
+    <script>
+        window.onload = ()=>{
+            function removerElemento(){
+            document.body.children[4].remove();
+            }
+
+            var btnRemover = document.getElementById("btnRemover");
+            btnRemover.onclick = ()=> {
+                removerElemento();
+            };
+        }        
+    </script>
+</head>
+<body>
+    <h1>Exemplo Document Object Model (DOM)</h1>
+    <button  onclick="alert('o botão foi clicado!')">Clique-me</button>
+    <button id="btnRemover">Remover</button>
+    <p>Modelo para manipulação dos elementos HTML.</p>
+    <p>Segundo elemento HTML.</p>
+</body>
+</html>
